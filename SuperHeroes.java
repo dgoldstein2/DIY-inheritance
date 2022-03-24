@@ -43,4 +43,10 @@ public class SuperHeroes{
     public String getSideKick(){
         return sideKick;
     }
+    public boolean equals(Object other){
+        SuperHeroes otherSuperHeroes = (SuperHeroes) other;
+      
+      return this.name.equals(otherSuperHeroes.name);
+    }
+
 }

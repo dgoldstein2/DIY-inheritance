@@ -1,16 +1,16 @@
 
 
 public class DC extends SuperHeroes{
-    private String name;
+    
     private int Strength;
     public DC(){
-        name = "Jeff";
+        
         Strength = 0;
     }
     public DC(String n, int l){
         super(n,l);
-        name = n;
-        Strength = l;
+        
+        Strength = l*2;
     }
     public void side(){
         System.out.print(super.getSideKick());
@@ -19,6 +19,13 @@ public class DC extends SuperHeroes{
         return Strength;
     }
     public String duel(String x){
-        return "Come look " + name + " is going to fight " + x +"!";
+        return "Come look " + super.getName() + " is going to fight " + x +"!";
     }
+    public boolean equals(Object o){
+        return super.equals(o);
+        }
+
+    public String toString(){
+        return super.toString() + " and i have the strength of " + Strength;
+        }
 }
