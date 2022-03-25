@@ -13,7 +13,7 @@ public class DC extends SuperHeroes{
         Strength = l*2;
     }
     public void side(){
-        System.out.print(super.getSideKick());
+        System.out.println(super.getSideKick());
     }
     public int getStrength(){
         return Strength;

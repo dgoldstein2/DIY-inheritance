@@ -11,12 +11,7 @@ public class Marvel extends SuperHeroes{
         
         Power = l*3;
     }
-    public void marvelVillains(){
-        ArrayList<String> x = super.getList();
-        for(String f : x){
-            System.out.println(f);
-        }
-    }
+    
     public String movieTitle(){
         return "Marvel's "+ super.getName();
     }

@@ -25,7 +25,7 @@ public class SuperHeroes{
         level = f;
     }
     public String toString(){
-       return "I'm: " + name + ", I am at level "+level;
+       return "I'm " + name + ", I am at level "+level;
     }
     public void roguesGallery(String m){
         villains.add(m);
@@ -33,8 +33,10 @@ public class SuperHeroes{
     public void rankVillain(int x, String n){
         villains.add(x-1,n);
     }
-    public ArrayList<String> getList(){
-        return villains;
+    public void getList(){
+        for(String x : villains){
+            System.out.println(x + " ");
+        }
     }
     public void addSideKick(String v){
         sideKick = v;
